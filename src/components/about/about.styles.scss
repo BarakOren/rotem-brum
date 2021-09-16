@@ -1,0 +1,22 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: auto;
+}
+
+.about{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    .aboutContent{
+        // margin: -3% 0 0 0;
+    }
+    
+}
+

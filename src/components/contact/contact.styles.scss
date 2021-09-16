@@ -1,0 +1,147 @@
+.contact{
+    position: relative;
+    margin-top: 5%;
+    
+    .contactBackground{
+        background-image: url("../../assests/backgrounds/2.jpeg");
+        clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+        opacity: 0.6;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .contactContainer{
+        padding-top: 100px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+
+        
+            .contactme{
+                
+                margin: 0 0;
+                color: rgb(255, 255, 255);
+                font-size: 50px;
+                width: 100%;
+            }
+
+            .contact-form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1em;
+
+
+                    .inputs{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+
+                    .input{
+                        font-weight: 200;
+                        font-family: 'Work Sans', sans-serif;
+                        border-radius: 3px;
+                        font-size: 20px;
+                        margin: 1% 0;
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(0, 0, 0);
+                        border: solid 1px rgb(255, 255, 255);
+                        width: 24vw;
+                    }
+
+                    .textarea{
+                        font-weight: 200;
+                        font-family: 'Work Sans', sans-serif;
+                        border-radius: 3px;
+                        width: 50vw;
+                        height: 10vh;
+                        margin: 1% 0;
+                        font-size: 20px;
+                        color: white;
+                        border: solid 1px white;
+                        background-color: rgb(0, 0, 0);
+                    }
+
+                    .submit{
+                        font-family: 'Work Sans', sans-serif;
+                        border: none;
+                        border-radius: 3px;
+                        margin: 1% 0;
+                        width: 20%;
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(0, 0, 0);
+                        font-size: 90%;
+                        transition: background-color 200ms;
+                        
+                        &:hover{
+                            cursor: pointer;
+                        } 
+                      }
+                }
+
+}
+
+
+
+
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
+@media only screen and (max-width: 768px) {
+
+.contact{
+
+    .contactContainer{
+
+        .contactme{
+            font-size: 6vw;
+        }
+    
+        .contact-form{
+           
+            .inputs{
+
+                .input{
+                    margin: 2% 0;
+                    width: 40%;
+                    font-size: 4vw;
+                }
+            }
+        
+            .textarea{
+                margin: 2% 0;
+                width: 80%;
+                font-size: 4vw;
+            }
+        
+            .submit{
+                width: 50%;
+                font-size: 4vw;
+            }
+        }
+    }
+}
+
+
+}

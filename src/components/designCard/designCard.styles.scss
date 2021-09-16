@@ -1,0 +1,71 @@
+.designCard {
+    border: solid white; 
+    height: 35vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 20%;
+    overflow: hidden;
+
+    
+    &:hover {
+        cursor: pointer;
+    
+
+        & .background-image {
+            opacity: 0.5;
+            transition: 300ms;    
+        }
+
+        & .designContent {
+            opacity: 1;
+            transition: 300ms;
+        }
+    }
+
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .designContent {
+        opacity: 0.5;
+        transition: opacity 300ms;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+            
+  
+      .card-title {
+          max-width: 38vw;
+        font-size: 5vw;
+      }
+  
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .designCard{
+        border: solid 1px white; 
+        height: 23vh;
+        width: 40vw;
+
+        .designContent{
+            opacity: 1;
+            padding: 0 3px;
+            background-color: rgba(0, 0, 0, 0.479);
+            
+            .card-title {
+                padding: 0 1vw;
+                font-size: 90%;
+                max-width: 35vw;
+              }
+        }
+    }
+}

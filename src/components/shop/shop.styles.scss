@@ -1,0 +1,83 @@
+.shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .shopwillbe{
+        width: 70%;
+        font-size: 5vw;
+        height: 40vh;
+    }
+
+    .checkoutDiv{
+        font-size: 2vw;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgb(233, 233, 233);
+        width: 20vw;
+        padding: 1vw 2vw;
+        border-radius: 3px;
+        transition: background-color 200ms;
+
+        &:hover{
+            cursor: pointer;
+            transition: background-color 200ms;
+            background-color: rgb(202, 202, 202);
+        }
+
+        .checkoutIcon{
+            margin: 0 5%;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+            .itemCount{
+                margin: 0 0% 0 30%;
+            }
+        }
+    }
+
+    .itemsContainer{
+        display: flex;
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .shop{
+
+        .checkoutDiv{
+            display: flex;
+            flex-direction: row;
+            font-size: 5vw;
+            margin-bottom: 4vw;
+            width: 90%;
+            padding: 0;
+    
+            .checkoutIcon{
+                font-size: 10vw;
+                color: rgb(37, 37, 37);
+
+                .itemCount{
+                    margin: 0;
+                }
+            }
+        }
+    
+        .itemsContainer{
+
+
+        }
+    }
+    
+    
+}

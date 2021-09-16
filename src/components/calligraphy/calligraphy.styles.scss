@@ -1,0 +1,37 @@
+.calligraphy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+
+    .mainTitle{
+        // margin: 1% 0;
+    }
+
+    .calligraphyContainer{
+        // margin: 0% 5% 5% 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        // width: 95vw;
+    }
+}
+
+.page-enter {
+    opacity: 0;
+  }
+  .page-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+  }
+  .page-exit {
+    opacity: 1;
+  }
+  .page-exit-active {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+

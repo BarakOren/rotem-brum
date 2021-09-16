@@ -1,0 +1,38 @@
+.checkoutMessege{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.781);
+
+    .messageContainer{
+        // border: 1px solid white;
+        background-color: rgb(233, 233, 233);     
+        // background: radial-gradient(circle, rgb(15, 15, 15) 0%, rgb(0, 0, 0) 100%);
+        padding: 1% 2%;
+        border-radius: 10px;
+        position: relative;
+        color: rgb(0, 0, 0);
+
+
+        .x{
+            position: absolute;
+            background: linear-gradient(#181818, #1f1f1f);
+            padding: 0.5% 1.5%;
+            border: 1px solid white;
+            border-radius: 10px;
+            top: -15%;
+            right: -4%;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        .message{
+            font-size: 2.5vw;
+        }
+    }
+}

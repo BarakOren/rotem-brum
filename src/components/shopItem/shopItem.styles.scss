@@ -1,0 +1,81 @@
+.shopItem{
+    width: 20vw;
+    height: 50vh;
+    margin: 0 0.5%;
+    margin-bottom: 7%;
+    
+
+    .itemImage{
+        border: solid 3px white;
+        width: 100%;
+        height: 60%;
+        background-position: center;
+        background-size: cover;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .name{
+        font-size: 35px;
+        margin: 5% 0;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .price{
+        font-size: 30px;
+        margin: 3% 0;
+    }
+
+    .addButton{
+        font-family: 'Bebas Neue', cursive;
+        border-radius: 3px;
+        border: none;
+        font-size: 30px;
+        width: 70%;
+        margin: 3% 0;
+        background-color: rgb(233, 233, 233);
+        transition: background-color 200ms;
+
+        &:hover{
+            cursor: pointer;
+            transition: background-color 200ms;
+            background-color: rgb(202, 202, 202);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .shopItem{
+        width: 80vw;
+        height: 30vh;
+        margin: 0 0.5%;
+        margin-bottom: 20vh;
+        
+    
+        .itemImage{
+            border: solid 2px white;
+        }
+    
+        .name{
+            font-size: 10vw;
+            margin: 3% 0 0 0;
+
+        }
+    
+        .price{
+            margin: 0;
+            font-size: 8vw;
+        }
+    
+        .addButton{
+            
+            font-size: 8vw;
+        }
+    
+    }
+}

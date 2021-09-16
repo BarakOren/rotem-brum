@@ -1,0 +1,56 @@
+.titleContainer{
+    margin: 10% 0 3% 0;
+    height: 10vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    align-self: center;
+
+
+    .titleBackground{
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../../assests/backgrounds/2.jpeg");
+    }
+    
+    .thetitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        h1{
+            font-size: 7vw;
+        }
+    }
+}
+
+
+// @media only screen and (max-width: 1100px) {
+// .titleContainer{
+//     .thetitle{
+//         h1{
+//             font-size: 11vw;
+//         }
+//     }
+// }
+// }
+
+@media only screen and (max-width: 768px) {
+    .titleContainer{
+        height: 10vh;
+        width: 90%;
+        margin-top: 10vh;
+
+        .thetitle{
+            h1{
+                font-size: 10vw;
+                
+            }
+        }
+}
+}
