@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rotem-brum/static/css/main.5ff59f8d.chunk.css",
-    "main.js": "/rotem-brum/static/js/main.e3ed8b01.chunk.js",
-    "main.js.map": "/rotem-brum/static/js/main.e3ed8b01.chunk.js.map",
+    "main.js": "/rotem-brum/static/js/main.a0efc8de.chunk.js",
+    "main.js.map": "/rotem-brum/static/js/main.a0efc8de.chunk.js.map",
     "runtime-main.js": "/rotem-brum/static/js/runtime-main.21c1eec0.js",
     "runtime-main.js.map": "/rotem-brum/static/js/runtime-main.21c1eec0.js.map",
     "static/js/2.a5db19ab.chunk.js": "/rotem-brum/static/js/2.a5db19ab.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.21c1eec0.js",
     "static/js/2.a5db19ab.chunk.js",
     "static/css/main.5ff59f8d.chunk.css",
-    "static/js/main.e3ed8b01.chunk.js"
+    "static/js/main.a0efc8de.chunk.js"
   ]
 }
