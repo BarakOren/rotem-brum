@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./homepage.styles.scss";
 import rotemBrum from "../../assests/forsite_RotemnatuiSVG.svg";
 import calligraphySpinner from "../../assests/forsite_calli-circleSVG.svg";
@@ -8,12 +8,16 @@ import { CSSTransition } from 'react-transition-group';
 import { useHistory } from "react-router";
 import {useSelector, useDispatch} from "react-redux";
 
-import { homeFalse } from "../../redux/pages/pages.actions";
+import { homeFalse, homeTrue } from "../../redux/pages/pages.actions";
 
 const Homepage = () => {
 
     const dispatch = useDispatch();
     const homePage = useSelector(state => state.pagesReducer.homepage);
+
+    useEffect(() => {
+        dispatch(homeTrue())
+      }, [])
 
       const windowWidth = useSelector(state => state.widthReducer.width);
 
