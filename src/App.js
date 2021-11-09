@@ -13,30 +13,16 @@ import CheckoutPage from "./components/checkout/checkout.component";
 import ViewProduct from "./components/viewProduct/viewProduct.component"
 import {useLocation} from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import {getWidth} from "./redux/width/width.actions";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 
 function App() {
   const location = useLocation();
   const dispatch = useDispatch();
 
-  const width = useSelector(state => state.widthReducer.width);
-
-    useEffect(() => {
-    function handleResize() {
-        dispatch(getWidth())
-        }
-        window.addEventListener('resize', handleResize)
-    },[dispatch, width])
-
-    const menu = (width < 800) ? true : false;
-
-
-
   return (
     <div className="App">
-        { menu ? <Menu /> : <Header />}
-    
+       <Menu />  
+       <Header />
         <TransitionGroup>
         <CSSTransition
           timeout={500}

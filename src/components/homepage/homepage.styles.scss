@@ -12,6 +12,7 @@ width: 100vw;
         // position: absolute;
         width: 70%;
         margin-top: 3vh;
+        display: none;
         // opacity: 0.3;
         // top: 3%;
         // left: 3%;
@@ -207,7 +208,13 @@ width: 100vw;
   }
 }
 
-
+@media only screen and (max-width: 800px) {
+  .homepage{
+    .title{
+      display: initial;
+    }
+  }
+}
 
 @media only screen and (max-width: 768px) {
   html, body {

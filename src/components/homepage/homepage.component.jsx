@@ -19,10 +19,6 @@ const Homepage = () => {
         dispatch(homeTrue())
       }, [])
 
-      const windowWidth = useSelector(state => state.widthReducer.width);
-
-      const title = (windowWidth < 800) ? true : false;
-
       const history = useHistory();
 
       function goTo(location){
@@ -35,9 +31,9 @@ const Homepage = () => {
 
     return(
         <div className="homepage">
-                {
-                    title ? <img src={rotemBrum} alt="title" className="title" /> : <p></p>
-                }   
+                
+                <img src={rotemBrum} alt="title" className="title" />
+                   
          
             <CSSTransition  
             unmountOnExit 

@@ -7,6 +7,7 @@ import {toggleMenu} from "../../redux/menu/menu.actions";
 import { useLocation, useHistory } from "react-router";
 import {homeTrue, homeFalse} from "../../redux/pages/pages.actions";
 import { closeMenu } from "../../redux/menu/menu.actions";
+
 const Menu = () => {
         
         const dispatch = useDispatch();
@@ -48,12 +49,9 @@ const Menu = () => {
                     <p style={{textDecorationLine: color === "/shop" ? "underline" : ""}} onClick={() => goTo("/shop")} className="menuItem">Shop</p>
                     <p style={{textDecorationLine: color === "/about" ? "underline" : ""}} onClick={() => goTo("/about")} className="menuItem">About/Contact</p>            
             </div>
-
         </div>
         </div>
     )
 }
-
-
 
 export default Menu;

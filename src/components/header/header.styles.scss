@@ -1,5 +1,4 @@
 .header{
-    // font-family: 'Montserrat', sans-serif;
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     z-index: 10;
@@ -53,7 +52,6 @@
 
     }
 
-
 }
 
 
@@ -64,5 +62,11 @@
                 font-size: 1.6vw
             }
         }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .header{
+        display: none;
     }
 }
